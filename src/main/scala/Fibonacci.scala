@@ -9,7 +9,7 @@ object Fibonacci {
     val fibonacciNumbers : ListBuffer[Int] = ListBuffer(previousNumber, currentNumber)
     var nextNumber : Int = 0
     var counter = 1
-    while ( counter <= numberOfSequence) {
+    while ( counter < numberOfSequence) {
       nextNumber = previousNumber + currentNumber
       fibonacciNumbers.addOne(nextNumber)
 
