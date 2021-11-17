@@ -1,9 +1,11 @@
+import Fibonacci.fibonacci
 import org.scalatest.funsuite.AnyFunSuite
 
 class FibonacciTest extends AnyFunSuite {
 
-  test("testFibonacci") {
-
+  test("test positive numbers") {
+    val list = fibonacci(4)
+    assertResult(2, list.length)
   }
 
 }
