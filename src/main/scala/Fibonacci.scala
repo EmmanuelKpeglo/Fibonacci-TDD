@@ -1,7 +1,7 @@
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 
-object Fibonacci {
+object Fibonacci extends App {
 
   def fibonacci(numberOfSequence : Int): mutable.Seq[Int] = {
     var previousNumber: Int = 0
@@ -9,7 +9,7 @@ object Fibonacci {
     val fibonacciNumbers : ListBuffer[Int] = ListBuffer(previousNumber, currentNumber)
     var nextNumber : Int = 0
     var counter = 1
-    while ( counter < numberOfSequence) {
+    while ( counter < numberOfSequence - 1) {
       nextNumber = previousNumber + currentNumber
       fibonacciNumbers.addOne(nextNumber)
 
@@ -22,5 +22,7 @@ object Fibonacci {
     fibonacciNumbers
 
   }
+
+//  println(fibonacci(1))
   
 }
