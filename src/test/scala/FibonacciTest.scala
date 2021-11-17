@@ -7,8 +7,8 @@ class FibonacciTest extends AnyFunSuite {
     val list = fibonacci(4)
     assert(list.last == 2)
 
-    val list2 = fibonacci(5)
-    assert(list2.last == 3)
+    val list2 = fibonacci(1)
+    assert(list2.last == 0)
   }
 
 }
