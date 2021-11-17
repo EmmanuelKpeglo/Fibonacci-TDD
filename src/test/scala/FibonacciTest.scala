@@ -11,4 +11,8 @@ class FibonacciTest extends AnyFunSuite {
     assert(list2.last == 0)
   }
 
+  test("test for 0 elements") {
+
+  }
+
 }

@@ -15,6 +15,7 @@ object Fibonacci extends App {
       val fibonacciNumbers : ListBuffer[Int] = ListBuffer(previousNumber, currentNumber)
       var nextNumber : Int = 0
       var counter = 1
+
       while ( counter < numberOfSequence - 1) {
         nextNumber = previousNumber + currentNumber
         fibonacciNumbers.addOne(nextNumber)
@@ -31,6 +32,6 @@ object Fibonacci extends App {
 
   }
 
-  println(fibonacci(8))
+//  println(fibonacci(8))
   
 }
